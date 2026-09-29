@@ -1,0 +1,6 @@
+bin/
+data/input/*.pgm
+!data/input/.gitkeep
+data/output_1s/
+*.pdf
+__pycache__/
