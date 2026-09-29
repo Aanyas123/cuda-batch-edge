@@ -1,0 +1,33 @@
+=== Tue 29 Sep 2026 04:31:27 PM UTC ===
+Tue Sep 29 16:31:27 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.28.03              Driver Version: 560.28.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      On  |   00000000:3E:00.0 Off |                    0 |
+| N/A   36C    P8             16W /   72W |       1MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+=== Run 1: 4 streams, equalize on ===
+GPU: NVIDIA L4 (compute 8.9, 58 SMs)
+Found 200 images in data/input; using 4 streams; equalize=on
+Processed 200 images (0 failed) in 0.061 s wall-clock
+Total: 52.4 MPixels, throughput 860.4 MPixels/s, mean GPU time/image 0.077 ms
+=== Run 2: 1 stream (baseline) ===
+GPU: NVIDIA L4 (compute 8.9, 58 SMs)
+Found 200 images in data/input; using 1 streams; equalize=on
+Processed 200 images (0 failed) in 0.068 s wall-clock
+Total: 52.4 MPixels, throughput 770.0 MPixels/s, mean GPU time/image 0.075 ms
+=== Output files ===
+200
